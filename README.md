@@ -54,7 +54,8 @@ The application will be accessible at http://localhost:8000.
    python manage.py createsuperuser
 
 
-![Screenshot (175)](https://github.com/manishraj27/AgriConnect-HUB/assets/77354587/10d49a4b-27ad-4075-8b62-416c0cd976e0)
+![Screenshot (175)](https://github.com/manishraj27/AGRICONNECT-HUB/assets/77354587/1fa92640-a2d4-4276-9a8c-d1029724746c)
+
 
 
 ### Contributing
