@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Agriconnect Hub</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">"WE ARE TEAM 1084: Manish Raj && K Manish <br>Welcome to Agriconnect Hub, where innovation meets agriculture to empower rural communities. We are on a mission to bridge the gap between farmers and entrepreneurs, fostering economic growth and sustainability. Our platform is not just a hub; it's a revolution in Agricultural Products Rural Entrepreneurship Management.
+
+At Agriconnect Hub, we believe in the transformative power of technology to elevate agricultural practices and rural entrepreneurship. We've developed an innovative Agricultural Products Rural Entrepreneurship Management System, meticulously crafted to streamline interactions, ensure secure transactions, and facilitate impactful collaboration" </h3>
+<br><br><br>br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+</html>
