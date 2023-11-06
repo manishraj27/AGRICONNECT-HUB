@@ -53,6 +53,8 @@ The application will be accessible at http://localhost:8000.
    ```bash
    python manage.py createsuperuser
 
+### Prototype link
+https://www.figma.com/community/file/1278813536736300386
 
 ![Screenshot (175)](https://github.com/manishraj27/AGRICONNECT-HUB/assets/77354587/1fa92640-a2d4-4276-9a8c-d1029724746c)
 
