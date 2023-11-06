@@ -35,7 +35,7 @@ SECRET_KEY = '#vw(03o=(9kbvg!&2d5i!2$_58x@_-3l4wujpow6(ym37jxnza'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -89,8 +89,12 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'BA4eEd6bGDDB36FgceFfdgG34G61dEdE',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '50277',
     }
 }
 
@@ -125,16 +129,14 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS=[STATIC_DIR,]
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
