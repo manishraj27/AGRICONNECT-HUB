@@ -155,7 +155,7 @@
     width: 111px;
     height: 43px;
     display: flex;
-    position: relative;
+    position: center;
     align-items: flex-start;
     flex-shrink: 0;
     color: white;
