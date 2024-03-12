@@ -86,7 +86,7 @@
 
       <tr>
         <td> {{p.name}}</td>
-        <td> <img src="{% static p.product_image.url %}" alt="Profile Pic" height="50px" width="50px" /></td>
+        <td> <img src="{{p.product_image.url}}" alt="Profile Pic" height="50px" width="50px" /></td>
         <td>₹{{p.price}}</td>
         <td>{{p.description}}</td>
 
