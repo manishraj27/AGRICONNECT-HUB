@@ -34,7 +34,7 @@
           {% endfor %}
           {% for p in product %}
           <td> {{p.name}}</td>
-          <td> <img src="{% static p.product_image.url %}" alt="Profile Pic" height="40px" width="40px" /></td>
+          <td> <img src="{{ p.product_image.url }}" alt="Profile Pic" height="40px" width="40px" /></td>
 
           {% if order.status == 'Pending'%}
           <td> <span class="label label-info">{{order.status}}</span></td>
