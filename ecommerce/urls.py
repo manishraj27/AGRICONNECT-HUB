@@ -3,6 +3,8 @@ from django.contrib import admin
 from django.urls import path
 from ecom import views
 from django.contrib.auth.views import LoginView,LogoutView
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.landing_page, name='landing_page'),
@@ -52,7 +54,7 @@ urlpatterns = [
     path('payment-success', views.payment_success_view,name='payment-success'),
 
 
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 #urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 #urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
