@@ -1,0 +1,22 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media
+
+# If you are using SQLite3 database, you should ignore the database file:
+*.sqlite3
+
+# Environments
+venv/
+env/
+
+# VSCode specific
+.vscode/
+
+# Python package related
+*.py[cod]
+*.pyo
+.Python
