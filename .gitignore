@@ -5,6 +5,7 @@
 __pycache__/
 db.sqlite3
 media
+.idea
 
 # If you are using SQLite3 database, you should ignore the database file:
 *.sqlite3
